@@ -81,7 +81,7 @@ That's it! Once a pull request from a branch has been approved and merged to mai
 Keeping your branches list clean makes it easier to stay organized and know which branches are active.
 
 
-## III. If Other PRs Are Approved Before Yours and/or the Main Branch Diverges from the Branch
+## IV. If Other PRs Are Approved Before Yours and/or the Main Branch Diverges from the Branch
 > Your pull request will end up with a merge conflict. This is because the main branch has progressed while your branch has not incorporated those new changes.
 > 
 > GitHub will mark the pull request as having conflicts that need to be resolved before merging.
@@ -104,7 +104,9 @@ git rebase main
 > This will replay your commits on top of the new main branch commits and force you to resolve any conflicts between your code and the new main branch code.
 > 
 > After resolving conflicts and completing the rebase, force push your branch to update the pull request `git push -f origin your-branch`
-
+```
+git push -f origin your-branch
+```
 > Now your pull request will show as up-to-date and the new commits from main. A reviewer can re-approve it and complete the merge.
 >
 >So in summary, if the main branch progresses, you need to rebase and resolve conflicts before your outdated branch can be merged. Let me know if this helps explain the workflow!
