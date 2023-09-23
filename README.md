@@ -57,24 +57,25 @@ Here are the steps to create a new branch on GitHub after cloning a repository:
 
 **Once your pull request is approved and merged, the branch is no longer needes so you can delete your branch.**
 
-**Follow these steps to delete a branch on GitHub after its pull request has been merged:**
-- Locally, switch to the main branch:
+## III. Delete Branch After PR Approval
+- Follow these steps to delete a branch on GitHub after its pull request has been merged:
+1. Locally, switch to the main branch:
     ```
     git checkout main
     ```
-- Delete the local branch:
+2. Delete the local branch:
     ``` 
     git branch -d branch-to-delete
     ```
-- Update your local main branch:
+3. Update your local main branch:
     ```
     git pull
     ```
-- Delete the remote branch on GitHub:
+4. Delete the remote branch on GitHub:
     ```
     git push origin --delete branch-to-delete
     ```
-- Verify the branch no longer exists on GitHub under the "Branches" tab.
+5. Verify the branch no longer exists on GitHub under the "Branches" tab.
 
 That's it! Once a pull request from a branch has been approved and merged to main, it's best practice to delete the now obsolete branch from both your local repository and GitHub.
 Keeping your branches list clean makes it easier to stay organized and know which branches are active.
@@ -87,10 +88,18 @@ Keeping your branches list clean makes it easier to stay organized and know whic
 > 
 > To resolve the conflict, you will need to rebase your branch onto the current main branch:
 
-`git checkout main`
-`git pull origin main`
-`git checkout your-branch`
-`git rebase main`
+```
+git checkout main
+```
+```
+git pull origin main
+```
+```
+git checkout your-branch
+```
+```
+git rebase main
+```
 
 > This will replay your commits on top of the new main branch commits and force you to resolve any conflicts between your code and the new main branch code.
 > 
