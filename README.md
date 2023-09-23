@@ -2,8 +2,6 @@
 
 ## Workflow
 
-1. # Create a New Branch on GitHub after Cloning
-
 Here are the steps to create a new branch on GitHub after cloning a repository:
 
 1. Clone the repository to your local machine using `git clone <repo-url>`. This will create a copy of the repository on your computer.
