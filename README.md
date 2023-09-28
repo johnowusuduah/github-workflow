@@ -1,4 +1,4 @@
-# 💥:Github Basics Workflow 
+# 💥 Github Basics Workflow 
 
 ## I. Create & Connect Local Branch to Remote Repository
 
